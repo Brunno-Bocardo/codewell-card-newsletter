@@ -1,0 +1,189 @@
+html {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Assets/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.hero {
+    background-color: #2e3fd4;
+    height: 100%;
+    background-image: url(Assets/Pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.texto-principal {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.conteudo {
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo:nth-last-child() {
+    color: #2e3fd4;
+}
+
+.texto {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.inscricao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 8px 75px 8px 5px;
+    background-color: #f3f3f3;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.btn-inscricao {
+    background-color: #2e3fd4;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    
+}
+
+.complemento {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.inscricao-complemento {
+    font-size: 12px;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.info {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.info.nome {
+    font-weight: 600;
+}
+
+.quote {
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .card {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .conteudo {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .texto {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    .input {
+        padding: 8px 0px 8px 3px;
+        background-color: #f3f3f3;
+        border-style: none;
+        border-radius: 5px;
+    }
+    
+    .btn-inscricao {
+        background-color: #2e3fd4;
+        color: #fff;
+        padding: 8px 15px;
+        font-size: 13px;
+        border-radius: 5px;
+        
+    }
+
+    .info {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    
+    .info.nome {
+        font-weight: 600;
+    }
+    
+    .quote {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 5px;
+    }
+}
